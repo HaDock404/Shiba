@@ -1,0 +1,189 @@
+.shiba {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%);
+}
+#test {
+    background-color: red;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #FFA800;
+    position: absolute;
+}
+
+.animation1 {
+    animation: animation1 10s linear 1s infinite;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(100%, 100%);
+    }
+    50% {
+        transform: translate(0%, 200%);
+    }
+    75% {
+        transform: translate(-100%, 100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.animation2 {
+    animation: animation2 10s linear 1s infinite;
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(50%, -50%);
+    }
+    50% {
+        transform: translate(0%, -100%);
+    }
+    75% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.animation3 {
+    animation: animation3 15s linear 1s infinite;
+}
+
+@keyframes animation3 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(-100%, 100%);
+    }
+    50% {
+        transform: translate(0%, 200%);
+    }
+    75% {
+        transform: translate(100%, 100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.animation4 {
+    animation: animation4 10s linear 1s infinite;
+}
+
+@keyframes animation4 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(50%, 50%);
+    }
+    50% {
+        transform: translate(0%, 100%);
+    }
+    75% {
+        transform: translate(-50%, 50%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.shibaAnimation1 {
+    animation: shibaAnimation1 15s linear 1s infinite;
+}
+
+@keyframes shibaAnimation1 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.shibaAnimation2 {
+    animation: shibaAnimation2 7s linear 1s infinite;
+}
+
+@keyframes shibaAnimation2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.shibaAnimation3 {
+    animation: shibaAnimation3 15s linear 1s infinite;
+}
+
+@keyframes shibaAnimation3 {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.shibaAnimation4 {
+    animation: shibaAnimation4 7s linear 1s infinite;
+}
+
+@keyframes shibaAnimation4 {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+#title {
+    position: fixed;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50vw;
+    font-size: 200px;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    color: #FF50AE;
+    animation: bg 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes bg {
+    0%, 50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50%, 100% {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+  #HomeScreebox {
+    position: fixed;
+  }
